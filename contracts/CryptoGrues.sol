@@ -8,7 +8,7 @@ import "zeppelin-solidity/contracts/ownership/Ownable.sol";
  * CryptoGrues - a contract for my non-fungible crypto Grues.
  */
 contract CryptoGrues is ERC721Token, Ownable {
-    function CryptoGrues() ERC721Token("CryptoGrues", "GRUES") public { }
+    constructor() ERC721Token("CryptoGrues", "GRUES") public { }
 
     /**
     * @dev Mints a token to an address with a tokenURI.
