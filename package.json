@@ -4,7 +4,10 @@
   "description": "A Marketplace for Ethereum Non-fungible token based on OpenSea.io's tutorial.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-ts && npm run tslint",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "build-ts": "tsc"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
     "debug": "3.0.1",
     "eth-gas-reporter": "^0.1.1",
     "truffle": "4.0.1",
-    "truffle-hdwallet-provider": "^0.0.3"
+    "truffle-hdwallet-provider": "^0.0.3",
+    "typescript": "^3.0.1"
   }
 }
