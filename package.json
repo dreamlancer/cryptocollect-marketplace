@@ -1,0 +1,35 @@
+{
+  "name": "cryptocollectables-marketplace",
+  "version": "1.0.0",
+  "description": "A Marketplace for Ethereum Non-fungible token based on OpenSea.io's tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevejaxon/cryptocollectables-marketplace.git"
+  },
+  "author": "SteveJaxon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevejaxon/cryptocollectables-marketplace/issues"
+  },
+  "homepage": "https://github.com/stevejaxon/cryptocollectables-marketplace#readme",
+  "dependencies": {
+    "ethereumjs-abi": "^0.6.5",
+    "keccak": "^1.4.0",
+    "sha256": "^0.2.0",
+    "web3": "1.0.0-beta.34",
+    "zeppelin-solidity": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "debug": "3.0.1",
+    "eth-gas-reporter": "^0.1.1",
+    "truffle": "4.0.1",
+    "truffle-hdwallet-provider": "^0.0.3"
+  }
+}
