@@ -1,4 +1,4 @@
-export class MetadataAttribute {
+export class MetadataAttributeMetadata {
     public readonly traitType: string;
     public readonly displayType: string;
     public readonly probability: number;
