@@ -5,7 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-        "variable-name": [true, "ban-keywords", "check-format", "allow-snake-case", "allow-pascal-case"]
+        "variable-name": [true, "ban-keywords", "check-format", "allow-snake-case", "allow-pascal-case"],
+        "no-console": false
     },
     "rulesDirectory": []
 }
