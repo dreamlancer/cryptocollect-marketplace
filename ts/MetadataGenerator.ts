@@ -9,8 +9,9 @@ export class MetadataGenerator {
         const metadata: MetadataAttributeMetadata[] = [];
         return readFilePromise(pathToFile)
             .then((data) => {
-                return data.toJSON()
-                    .data.map((element) => MetadataAttributeMetadata.apply(element));
+                return JSON.parse(data.toString()).map((element) => {
+                    return Object.assign(Object.create(MetadataAttributeMetadata.prototype), element);
+                });
             })
             .catch((error) => {
                 console.error(`Unable to read the MetadataAttributeMetadata from the file ${pathToFile}: ${error}`);
