@@ -9,7 +9,7 @@ export class MetadataGenerator {
         const metadata: MetadataAttributeMetadata[] = [];
         return readFilePromise(pathToFile)
             .then((data) => {
-                return JSON.parse(data.toString()).map((element) => {
+                return JSON.parse(data.toString()).map((element: any) => {
                     return Object.assign(Object.create(MetadataAttributeMetadata.prototype), element);
                 });
             })
