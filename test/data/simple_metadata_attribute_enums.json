@@ -1,0 +1,23 @@
+[
+  {
+    "trait_name" : "rarity",
+    "trait_values" : [
+      {
+        "trait_value" : "common",
+        "probability": "0.7"
+      },
+      {
+        "trait_value" : "rare",
+        "probability": "0.2"
+      },
+      {
+        "trait_value" : "epic",
+        "probability": "0.09"
+      },
+      {
+        "trait_value" : "legendary",
+        "probability": "0.01"
+      }
+    ]
+  }
+]
