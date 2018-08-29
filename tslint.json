@@ -6,7 +6,8 @@
     "jsRules": {},
     "rules": {
         "variable-name": [true, "ban-keywords", "check-format", "allow-snake-case", "allow-pascal-case"],
-        "no-console": false
+        "no-console": false,
+        "max-line-length": [true, 240]
     },
     "rulesDirectory": []
 }
