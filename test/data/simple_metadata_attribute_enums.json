@@ -4,28 +4,19 @@
     "trait_values" : [
       {
         "trait_value" : "common",
-        "probability": {
-          "start": 0,
-          "end": 0.7
-        }
+        "probability_range_end":  0.7
       },
       {
         "trait_value" : "rare",
-        "probability": {
-          "end": 0.9
-        }
+        "probability_range_end": 0.9
       },
       {
         "trait_value" : "epic",
-        "probability": {
-          "end": 0.99
-        }
+        "probability_range_end": 0.99
       },
       {
         "trait_value" : "legendary",
-        "probability": {
-          "end": 1
-        }
+        "probability_range_end": 1
       }
     ]
   }
