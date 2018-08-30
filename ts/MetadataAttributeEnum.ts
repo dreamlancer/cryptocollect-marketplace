@@ -1,8 +1,10 @@
 export class MetadataAttributeEnum {
     public readonly traitValue: string;
-    public readonly probability: number;
-    constructor(trait: string, prob: number) {
+    public readonly probabilityRangeEnd: number;
+    public readonly probabilityRangeStart?: number;
+    constructor(trait: string, probabilityEnd: number, probabilityStart?: number) {
         this.traitValue = trait;
-        this.probability = prob;
+        this.probabilityRangeEnd = probabilityEnd;
+        this.probabilityRangeStart = probabilityStart;
     }
 }
