@@ -1,21 +1,19 @@
-import {readFile} from "fs";
-import {promisify} from "util";
-import {MetadataAttributeMetadata} from "./MetadataAttributeMetadata";
-
-const readFilePromise = promisify(readFile);
+import {MetadataAttributeEnum} from "./MetadataAttributeEnum";
 
 export class MetadataGenerator {
-    public readMetadataAttributesMetadataFromFile(pathToFile: string): Promise<MetadataAttributeMetadata[]> {
-        const metadata: MetadataAttributeMetadata[] = [];
-        return readFilePromise(pathToFile)
-            .then((data) => {
-                return JSON.parse(data.toString()).map((element: any) => {
-                    return Object.assign(Object.create(MetadataAttributeMetadata.prototype), element);
-                });
-            })
-            .catch((error) => {
-                console.error(`Unable to read the MetadataAttributeMetadata from the file ${pathToFile}: ${error}`);
-                return metadata;
-            });
+    public selectTraitValue(traitType: string, enumMap: Map<string, MetadataAttributeEnum[]>): string {
+        const enums = enumMap.get(traitType);
+        if (enums) {
+            const randomNumber = Math.random();
+            let index;
+            for (index = 0; index < enums.length; index++) {
+                const metadataAttribute = enums[index];
+                if (randomNumber < metadataAttribute.probabilityRangeEnd) {
+                    break;
+                }
+            }
+            return enums[index].traitValue;
+        }
+        throw new Error("Invalid Enum");
     }
 }
