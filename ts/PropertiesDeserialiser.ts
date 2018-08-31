@@ -29,7 +29,7 @@ export class PropertiesDeserialiser {
             });
     }
 
-    public readMetadataAttributesMetadataFromFile(pathToFile: string): Promise<MetadataAttributeMetadata[]> {
+    public static readMetadataAttributesMetadataFromFile(pathToFile: string): Promise<MetadataAttributeMetadata[]> {
         const metadata: MetadataAttributeMetadata[] = [];
         return readFilePromise(pathToFile)
             .then((data) => {
