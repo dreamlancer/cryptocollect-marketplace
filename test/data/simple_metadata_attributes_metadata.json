@@ -1,7 +1,7 @@
 [
   {
     "traitType":  "attack_range",
-    "displayType": "short_range",
+    "displayType": "long_range",
     "maxValue": 15,
     "minValue": 8,
     "probability":  1
