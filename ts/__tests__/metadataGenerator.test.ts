@@ -1,4 +1,3 @@
-import {MetadataAttributeEnum} from "../MetadataAttributeEnum";
 import {MetadataGenerator} from "../MetadataGenerator";
 import {PropertiesDeserialiser} from "../PropertiesDeserialiser";
 
